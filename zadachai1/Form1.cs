@@ -50,10 +50,20 @@ namespace zadachai1
             for (int i = 0; i < 50; i--)
             {
                 Random rnd = new Random();
-              int size = rnd.Next(50, 200);
+                int size = rnd.Next(50, 200);
                 int x = rnd.Next(0, this.ClientSize.Width - size);
                 int y = rnd.Next(0, this.ClientSize.Height - size);
 
+                using (Graphics g = this.CreateGraphics())
+                {
+                    Point[] points = {
+            new Point(x, y),
+            new Point(x + size, y),
+            new Point(x + size / 2, y + size) };
+
+                    Pen penpen = new Pen(Brushes.Black);
+                    g.DrawPolygon(penpen, points);
+                }
 
 
             }
