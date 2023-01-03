@@ -40,11 +40,15 @@ namespace zadachai1
                 g.DrawRectangle(Pens.Black, new Rectangle(x, y, width, height));
                 Thread.Sleep(3000);
             }
-            if (true)
-            {
 
-            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Thread t = new Thread(Triangle);
+            t.Start();
         }
     }
-    }
+}
+    
 
