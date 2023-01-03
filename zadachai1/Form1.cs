@@ -64,9 +64,15 @@ namespace zadachai1
                     Pen penpen = new Pen(Brushes.Black);
                     g.DrawPolygon(penpen, points);
                 }
-
+                Thread.Sleep(4000);
 
             }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Thread t = new Thread(Circle);
+            t.Start();
         }
     }
 }
