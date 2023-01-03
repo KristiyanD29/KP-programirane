@@ -45,8 +45,8 @@ namespace zadachai1
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Thread t = new Thread(Triangle);
-            t.Start();
+            Thread t2 = new Thread(Triangle);
+            t2.Start();
             for (int i = 0; i < 50; i--)
             {
                 Random rnd = new Random();
@@ -71,8 +71,8 @@ namespace zadachai1
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Thread t = new Thread(Circle);
-            t.Start();
+            Thread t3 = new Thread(Circle);
+            t3.Start();
 
         }
         private void Circle()
