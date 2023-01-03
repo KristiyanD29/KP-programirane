@@ -73,6 +73,10 @@ namespace zadachai1
         {
             Thread t = new Thread(Circle);
             t.Start();
+
+        }
+        private void Circle()
+        {
             for (int i = 0; i < 50; i--)
             {
                 Random rand = new Random();
@@ -88,6 +92,7 @@ namespace zadachai1
         }
     }
 }
+
 
 
 
